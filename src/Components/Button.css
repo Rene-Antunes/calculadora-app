@@ -4,12 +4,16 @@
 }
 
 .button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px;
     font-size: 1.4em;
     border-radius: 5px;
     border: 2px solid rgb(224, 221, 221);
     background-color: #fff;
-    text-align: center;
+    
+    
     outline: none;
        
 }
@@ -27,7 +31,7 @@
 }
 
 .button.equal{
-    background-color: rgb(5, 62, 136);
+    background-color: rgb(5, 57, 126);
     color: #ccc;
     font-weight: bold;
     columns: #fff;
