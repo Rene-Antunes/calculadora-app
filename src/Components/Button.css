@@ -1,14 +1,17 @@
 .root{
-    --bg-button: #f0f0f0;
-    --border-button: solid 2px rgb(5, 0, 0)404;
+    --bg-button: #ffffff;
+    --border-button: solid  rgb(5, 0, 0)404;
 }
 
 .button{
+    padding: 10px;
     font-size: 1.4em;
-    border: 1px solid rgb(206, 177, 177);
-    border-bottom: var(--border-button);
+    border-radius: 5px;
+    border: 2px solid rgb(224, 221, 221);
+    background-color: #fff;
+    text-align: center;
     outline: none;
-    
+       
 }
 
 .button:active{
@@ -23,11 +26,10 @@
     grid-column: span 3;
 }
 
-.button.operation{
-    background-color: #fa8231;
+.button.equal{
+    background-color: rgb(5, 62, 136);
+    color: #ccc;
+    font-weight: bold;
     columns: #fff;
 }
 
-.button.operation:active{
-    background-color: #fa8231cc;
-}
