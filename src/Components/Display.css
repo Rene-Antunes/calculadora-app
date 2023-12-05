@@ -1,9 +1,8 @@
 .display{
     grid-column: span 4;
-   
     background-color: rgba(248, 245, 245);
     
-    display: block;
+    display: flex;
     justify-content: flex-end;
     align-items: center;
     padding: 20px;
@@ -12,34 +11,3 @@
     color: black;
     overflow: hidden;
 }
-
-.display1{
-   
-    background-color: rgba(248, 245, 245);
-    position: relative;
-    text-align: end;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 5px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: black;
-   
-}
-
-.display2{
-    
-    background-color: rgba(248, 245, 245);
-    position: relative;
-    text-align: end;
-    justify-content: flex-end;
-    align-items: end;
-    padding: 5px;
-    margin-right: 4px;
-    margin-top: 60px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: black;
-    
-}
-
