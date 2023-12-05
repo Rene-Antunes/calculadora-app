@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# Calculator 
+
+Hello everyone! How are you? I'd like to share a small project I created with the aim of practicing React. It's a simple calculator inspired by the Windows 10 calculator but simplified. It can handle basic calculations and percentages as well. It may not seem like much, but coming from a Back-End background, it's quite rewarding. See you around, and happy studies to all!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
