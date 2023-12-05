@@ -37,16 +37,38 @@ export default class Calculator extends Component{
 
             const values = [...this.state.values]
 
-            try {
-                values[0] = eval(`${values[0]} ${currentOperation} ${values[1]}`)
-                if (isNaN(values[0]) || !isFinite(values[0])) {
-                    this.clearMemory()
-                return
-                }
-            } catch (e) {
-                values[0] = this.state.values[0]
+            let result
+
+            switch (currentOperation) {
+                case '+':
+                    
+                    result = values[0] + values[1]
+
+                    break;
+                case '-':
+                    result = values[0] - values[1]
+                    break;
+                case 'x':
+                    result = values[0] * values[1]
+                    break;
+                case '÷':
+                    result = values[0] / values[1]
+                    break;
+                case '%':
+                    result = (values[0] * values[1]) / 100
+                
+                    default:
+                        break
+
             }
-            
+
+            if(!isNaN(result) && isFinite(result)){
+                values[0] = result
+            }else{
+                this.clearMemory();
+                return
+            }
+        
             values[1] = 0
 
             this.setState({
@@ -92,7 +114,7 @@ export default class Calculator extends Component{
             <div className='calculator'>
                 <Display value={this.state.displayValue} />
                 <Button label="C" click= {this.clearMemory} double />
-                <Button label="%" click= {this.clearMemory}/>
+                <Button label="%" click= {this.setOperation}/>
                 <Button label="÷" click={this.setOperation} operation />
                 <Button label="7" click={this.addDigit} />
                 <Button label="8" click={this.addDigit}/>
